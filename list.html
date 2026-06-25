@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>📋 Notes List</h1>
+        <div class="filter-section">
+           <input type="date" id="filterDate">
+           <div class="btn-group">
+                <button onclick="filterNotes()">🔍 Filter Notes</button>
+                
+                <button onclick="showAllNotes()">📄 Show All</button>
+           </div>
+        </div>
+        <ul id="notesList">
+
+        </ul>
+
+        <a href="index.html">
+            <button type="button">Back to Add Note</button>
+        </a>
+
+    </div>
+
+    <script src="list.js"></script>
+
+</body>
+</html>
