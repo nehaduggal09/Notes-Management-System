@@ -1,42 +1,49 @@
 const notesList = document.getElementById("notesList");
 const filterDate = document.getElementById("filterDate");
 
-let notes = JSON.parse(localStorage.getItem("notes")) || [];
+let notes = [];
+
+async function getNotes() {
+    const response = await fetch("/notes");
+    notes = await response.json();
+    displayNotes(notes);
+}
 
 function displayNotes(data) {
     notesList.innerHTML = "";
 
-    data.forEach((item, index) => {
+    data.forEach((item) => {
         const li = document.createElement("li");
 
-       li.innerHTML = `
-        <div class="note-name">${item.name}</div>
+        li.innerHTML = `
+            <div class="note-name">${item.name}</div>
 
-        <div class="note-date">
-            📅 ${item.date}
-        </div>
+            <div class="note-date">
+                📅 ${item.date}
+            </div>
 
-        <div class="note-text">
-            📝 ${item.note}
-        </div>
+            <div class="note-text">
+                📝 ${item.note}
+            </div>
 
-        <button class="delete-btn"
-                onclick="deleteNote(${index})">
-            🗑 Delete Note
-        </button>
-`;
+            <button class="delete-btn"
+                    onclick="deleteNote('${item._id}')">
+                🗑 Delete Note
+            </button>
+        `;
 
         notesList.appendChild(li);
     });
 }
 
-function deleteNote(index) {
-    notes.splice(index, 1);
+async function deleteNote(id) {
+    await fetch(`/delete-note/${id}`, {
+        method: "DELETE"
+    });
 
-    localStorage.setItem("notes", JSON.stringify(notes));
-
-    displayNotes(notes);
+    getNotes();
 }
+
 function showAllNotes() {
     displayNotes(notes);
 }
@@ -49,9 +56,11 @@ function filterNotes() {
         return;
     }
 
-    const filteredNotes = notes.filter(item => item.date === selectedDate);
+    const filteredNotes = notes.filter(
+        item => item.date === selectedDate
+    );
 
     displayNotes(filteredNotes);
 }
 
-displayNotes(notes);
+getNotes();
