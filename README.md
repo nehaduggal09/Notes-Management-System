@@ -18,7 +18,7 @@ A simple and responsive Notes Management System built using HTML, CSS, JavaScrip
 - CSS3
 - JavaScript
 - Node.js
-- 
+  
 ## 🎯 Project Objective-
 
 The purpose of this project is to practice frontend and backend integration, file handling, and basic CRUD operations while building a practical notes management application.
