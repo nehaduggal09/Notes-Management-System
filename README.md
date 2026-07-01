@@ -1,53 +1,53 @@
 # 📝 Notes Management System
 
-A full-stack and responsive Notes Management System built using HTML, CSS, JavaScript, Node.js, Express.js, and MongoDB. This application allows users to create, store, manage, and organize notes efficiently with persistent cloud storage and live deployment.
+A simple and efficient Notes Management System built using Node.js, Express.js, and MongoDB. The application allows users to create, view, update, and delete notes while storing data securely in MongoDB Atlas.
 
 ## 🚀 Features
 
-- ➕ Create new notes
-- 💾 Save notes permanently using MongoDB
-- 🔍 Search notes instantly
-- 🗑️ Delete notes
-- ☁️ Cloud database integration with MongoDB Atlas
-- 🌐 Live deployment using Render
-- 📱 Responsive and user-friendly interface
-- ⚡ Fast and lightweight application
+- Create new notes
+- View all notes
+- Update existing notes
+- Delete notes
+- Persistent data storage using MongoDB
+- RESTful API implementation
+- Cloud deployment using Render
 
 ## 🛠️ Technologies Used
 
-### Frontend
-- HTML5
-- CSS3
-- JavaScript
-
-### Backend
 - Node.js
 - Express.js
-
-### Database
+- MongoDB
 - MongoDB Atlas
-
-### Deployment
+- MongoDB Compass
+- Git & GitHub
 - Render
 
-## 🎯 Project Objective
+  ## ☁️ Database
 
-The purpose of this project is to practice frontend and backend integration, REST APIs, MongoDB database operations, and CRUD functionality while building a practical notes management application.
+This project uses **MongoDB Atlas** as the cloud database service to store notes data securely and efficiently.
+
+## 🚀 Deployment
+
+The application is deployed on **Render** and can be accessed online through the deployed service URL.
+ URL-`https://notes-management-system-91ky.onrender.com`
+
+## 🔒 Environment Variables
+
+The following environment variables are required:
+
+```env
+MONGODB_URI=your_mongodb_connection_string
+PORT=your_port_number
+```
 
 ## 📌 Future Improvements
 
-- ✏️ Edit existing notes
-- 🏷️ Categories and tags for notes
-- 🌙 Dark mode support
-- 🔐 User authentication system
-- 📂 Archive and restore notes
-- 📤 Export notes functionality
+- User Authentication
+- Search Notes Feature
+- Categorize Notes
+- Note Tags
+- Frontend Integration
 
-## 🌍 Live Demo
+## 👩‍💻 Author
 
-Deployed on Render:`https://notes-management-system-91ky.onrender.com`
-
-## 👩‍💻 Developed By
-
-**Neha Duggal**
-
+Neha Duggal
