@@ -1,35 +1,53 @@
 # 📝 Notes Management System
 
-A simple and responsive Notes Management System built using HTML, CSS, JavaScript, and Node.js. This application helps users create, manage, and organize their notes efficiently through a clean and user-friendly interface.
+A full-stack and responsive Notes Management System built using HTML, CSS, JavaScript, Node.js, Express.js, and MongoDB. This application allows users to create, store, manage, and organize notes efficiently with persistent cloud storage and live deployment.
 
 ## 🚀 Features
 
 - ➕ Create new notes
-- 💾 Save notes
+- 💾 Save notes permanently using MongoDB
 - 🔍 Search notes instantly
-- 🏷️ Filter notes by category or keyword
 - 🗑️ Delete notes
+- ☁️ Cloud database integration with MongoDB Atlas
+- 🌐 Live deployment using Render
 - 📱 Responsive and user-friendly interface
 - ⚡ Fast and lightweight application
 
 ## 🛠️ Technologies Used
 
+### Frontend
 - HTML5
 - CSS3
 - JavaScript
+
+### Backend
 - Node.js
-  
-## 🎯 Project Objective-
+- Express.js
 
-The purpose of this project is to practice frontend and backend integration, file handling, and basic CRUD operations while building a practical notes management application.
+### Database
+- MongoDB Atlas
 
-## 📌 Future Improvements-
+### Deployment
+- Render
 
-✏️ Edit existing notes
-🌙 Dark mode support
-☁️ Database integration
-🔐 User authentication system
-👩‍💻 Author
+## 🎯 Project Objective
 
-## Developed by
-Neha Duggal
+The purpose of this project is to practice frontend and backend integration, REST APIs, MongoDB database operations, and CRUD functionality while building a practical notes management application.
+
+## 📌 Future Improvements
+
+- ✏️ Edit existing notes
+- 🏷️ Categories and tags for notes
+- 🌙 Dark mode support
+- 🔐 User authentication system
+- 📂 Archive and restore notes
+- 📤 Export notes functionality
+
+## 🌍 Live Demo
+
+Deployed on Render:`https://notes-management-system-91ky.onrender.com`
+
+## 👩‍💻 Developed By
+
+**Neha Duggal**
+
