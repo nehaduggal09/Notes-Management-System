@@ -29,7 +29,10 @@ This project uses **MongoDB Atlas** as the cloud database service to store notes
 ## 🚀 Deployment
 
 The application is deployed on **Render** and can be accessed online through the deployed service URL.
- URL-`https://notes-management-system-91ky.onrender.com`
+
+ ## 🚀 Live Demo
+
+🌐 https://notes-management-system-91ky.onrender.com
 
 ## 🔒 Environment Variables
 
